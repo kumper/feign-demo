@@ -1,0 +1,28 @@
+feign:
+  client:
+    config:
+      googleClient:
+#        url: https://accounts.google.com
+        url: https://stfs.bosch.com/adfs
+#        connectTimeout: 5000
+#        readTimeout: 5000
+        loggerLevel: full
+#        errorDecoder: com.example.SimpleErrorDecoder
+#        retryer: com.example.SimpleRetryer
+#        requestInterceptors:
+#          - com.example.FooRequestInterceptor
+#          - com.example.BarRequestInterceptor
+        decode404: false
+#        encoder: com.example.SimpleEncoder
+#        decoder: com.example.SimpleDecoder
+#        contract: com.example.SimpleContract
+
+#spring:
+#  cloud:
+#    loadbalancer:
+#      ribbon:
+#        enable: false
+
+logging:
+  level:
+    com.kp.knowledge.feigndemo: debug
